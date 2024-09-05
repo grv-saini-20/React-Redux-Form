@@ -53,13 +53,14 @@ function Form() {
         <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor='user-name'>User Name</label>
-                <input name="name" type="text" placeholder='Enter User Name' value={userData.name} onChange={handleChange}/>
+                <input name="name" id="user-name" type="text" placeholder='Enter User Name' value={userData.name} onChange={handleChange}/>
             </div>
           <div>
           <label htmlFor="email">Email:</label>
           <input
             type="email"
             name="email"
+            id="email"
             placeholder='Enter Email Address'
             value={userData.email}
             onChange={handleChange}
@@ -71,6 +72,7 @@ function Form() {
           <input
             type="text"
             name="phonenumber"
+            id='phone'
             placeholder='Enter Phone number'
             value={userData.phonenumber}
             onChange={handleChange}
